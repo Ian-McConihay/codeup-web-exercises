@@ -8,7 +8,7 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello(name) {
+function sayHello() {
     return 'Hello'
 }
 /**
@@ -18,7 +18,8 @@ function sayHello(name) {
  *
  * console.log 'helloMessage' to check your work
  */
-
+var myName = 'Ian'
+var helloMessage = sayHello + myName
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
@@ -47,6 +48,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+finction isTwo(x){
+    if (x == 2)
+        return true
+            } else{
+        return false
+    }
 
 /**
  * TODO:
