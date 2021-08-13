@@ -47,4 +47,4 @@
 //A global const does not override a local var
 
 
-})();
+});
