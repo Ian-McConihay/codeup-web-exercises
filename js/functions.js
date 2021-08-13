@@ -97,7 +97,7 @@ function uiTip() {
  */
 function applyDiscount(price){
     var originalPrice = price
-    var discountPrice = .25
+    var discountPrice = .12
     return originalPrice * discountPrice
 }
 
