@@ -48,7 +48,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-finction isTwo(x){
+finction isTwo(x) {
     if (x == 2)
         return true
             } else{
@@ -66,7 +66,9 @@ finction isTwo(x){
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+function calculateTip(x) {
 
+}
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to

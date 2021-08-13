@@ -1,5 +1,5 @@
 'use strict';
-console.log('Hello from external Javascript')
+
 alert('Welcome to my Website!')
 var pokemon = 'I gotta catch them all'
 console.log(pokemon)
