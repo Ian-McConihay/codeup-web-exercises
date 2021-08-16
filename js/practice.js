@@ -88,20 +88,19 @@ trafficColor()
 
 
 // switch statement
-// var  = prompt("");
-//
-// switch() {
-//     case "":
-//         alert("");
-//         break;
-//     case "":
-//         alert("");
-//         break;
-//     default:
-//         alert(var + "");
-//         break;
-// }
-
+switch(prompt('Pick a color')) {
+    case "blue":
+        alert('blue is the color of the sky');
+        break;
+    case "red":
+        alert('Strawberries are red');
+        break;
+    case 'cyan':
+        alert('I dont know anything about cyan');
+    default:
+        alert('Huh....what??');
+        break;
+}
 var bike = prompt("lets go ride");
 
 switch(bike) {
