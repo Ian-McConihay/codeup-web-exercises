@@ -1,5 +1,5 @@
 // use strict before the shield
-(function () {
+// (function () {
     console.log('Hello from Javascript');
 
 // define a named funnction
@@ -43,8 +43,77 @@
         return 'Hi, ' + username;
     }
 
-    console.log(greeting())
+
+// turnary operator
+if(true){
+    console.log('bla bla');
+} else {
+    console.log('yeah yeah')
+}
+
+(condition) ? console.log('bla bla') : console.log('yeah yeah')
+var car = 'vroom vroom'
+(car === 'vroom vroom' )
+
+
+
+
+console.log(greeting())
 //A global const does not override a local var
+var haveSunscreen = false;
+var isSunny = true;
+
+    if (isSunny) {
+        alert('Dont Forget some sunscreen!');
+    } else {
+        alert('Good too much sun can cause some issues');
+    }
+
+    function trafficColor() {
+
+    var trafficLight = prompt('What color is the traffic light?');
+
+    if(trafficLight.toLowerCase() === 'red'); {
+        alert('Stop');
+    } else if(trafficLight.toLowerCase() === 'yellow') {
+        alert('Slow down');
+    } else if(trafficLight.toLowerCase() === 'green') {
+    alert('GO');
+    } else {
+        alert('Be careful!')
+    }
+}
+trafficColor()
 
 
-});
+
+// switch statement
+// var  = prompt("");
+//
+// switch() {
+//     case "":
+//         alert("");
+//         break;
+//     case "":
+//         alert("");
+//         break;
+//     default:
+//         alert(var + "");
+//         break;
+// }
+
+var bike = prompt("lets go ride");
+
+switch(bike) {
+    case "hill":
+        alert("going down hill");
+        break;
+    case "car":
+        alert("caution");
+        break;
+    default:
+        alert(bike + " fast");
+        break;
+}
+
+// });

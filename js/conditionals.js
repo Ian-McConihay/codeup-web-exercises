@@ -19,9 +19,20 @@ console.log('Hello from js')
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor(blue, red, cyan){
-    if blue return 'blue is the color of the sky'
+function analyzeColor(inputColor){
+    if(inputColor == 'blue') {
+        return console.log('blue is the color of the sky');
+    } else if(inputColor == 'red') {
+        return console.log('Strawberries are red')
+    } else if(inputColor == 'cyan') {
+        return console.log('I dont know anything about cyan')
+    } else {
+        return console.log('Huh....what??')
+    }
 }
+
+
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
