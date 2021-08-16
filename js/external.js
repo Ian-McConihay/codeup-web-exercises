@@ -24,3 +24,8 @@ prompt('Is you schedule good for class and is the class have seats?')
 var classNotFull = true
 var schedualGood = true
 
+var productQuantity = 1;
+var offerVaild = false;
+var isPremiumMem = true;
+console.log('Customrer qulifies for offer? ' + (productQuantity > 2 || isPremiumMem) && offerVaild)
+
