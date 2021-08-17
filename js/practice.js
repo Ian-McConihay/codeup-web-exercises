@@ -114,5 +114,31 @@ switch(bike) {
         alert(bike + " fast");
         break;
 }
+// Loops
+// while loop
+// do/while
+// for loop
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // });
