@@ -145,12 +145,14 @@ function applyDiscount(calculateTotal) {
      */
     var luckyNumber = Math.floor(Math.random() * 100);
     function numberFacts(x) {
-        if (x === x) {
-            console.log((x + 100 >= 1) + 'Your number is positive')
-        } else if (x >= 1) {
-            console.log('It is a Negative number')
-        } else if (x <= 0) {
-            console.log('Your number is positive')
+        if (x >= 0 && x % 2 == 0) {
+            console.log( (x + 100) + ' Is positive and even')
+        } else if (x <= 0 && x % 2 == 0) {
+            console.log( (x + 100) + ' Is a Negative number and even')
+        } else if (x >= 0 && x % 2 !== 0 ) {
+            console.log( (x + 100) + ' Is positive and odd')
+        } else if (x <= 0 && x % 2 !== 0) {
+            console.log( (x + 100) + ' Is a Negative number and odd')
         }
     }
 
