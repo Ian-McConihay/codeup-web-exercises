@@ -106,16 +106,20 @@ function calculateTotal(x){
 }
 calculateTotal(luckyNumber)
 
-function applyDiscount(calculateTotal) {
-    if ((luckyNumber === 1) * .10) {
-    } else if ((luckyNumber === 2) * .25) {
-    } else if ((luckyNumber === 3) * .30) {
-    } else if ((luckyNumber === 4) * .50) {
-    } else if ((luckyNumber === 5) * 0) {
-
+function applyDiscount(x) {
+    if (x === 1 )  {
+    } console.log(x + 100 *.10)
+    else if (console.log((x === 2 + 100) * .25)) {
+    } console.log(x + 100 * .25)
+    else if (console.log((x === 3 + 100) * .30)) {
+    } console.log(x + 100 * .30)
+    else if (x === 4 ) {
+    } console.log(x + 100 * .50)
+    else if (x === 5 ) {
+    console.log(x * 0)
     }
     }
-    applyDiscount + calculateTotal
+applyDiscount(luckyNumber)
     /**
      * TODO:
      * Uncomment the line below to generate a random number between 0 and 6.
@@ -155,5 +159,4 @@ function applyDiscount(calculateTotal) {
             console.log( (x + 100) + ' Is a Negative number and odd')
         }
     }
-
     numberFacts(luckyNumber)
