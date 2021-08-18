@@ -30,6 +30,7 @@ showMultiplicationTable(7)
 // }
 // }
 
+// EX 4.
 for (var i = 1; i < 10; i++ ) {
     var num = i
     for (var y = 1; y < i; y++){
@@ -37,6 +38,17 @@ for (var i = 1; i < 10; i++ ) {
     }
     console.log(parseInt(num))
 }
+// EX 4. other version
+for(var i = 1; i < 10; i++ ) {
+    var output = ' ';
+    for (var j = 0; j < i; j++) {
+        output = output + i.toString() ;
+    }
+    console.log(output)
+}
+
+
+
 
 for (var i = 100; i >= 5; i -= 5 ) {
     console.log(i)
