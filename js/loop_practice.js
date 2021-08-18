@@ -5,7 +5,7 @@
 //
 
 //are we there yet?
-var areWeThereYet;
+// var areWeThereYet;
 
 // while (!areWeThereYet){
 //     areWeThereYet = confirm('Are we there yet?')
@@ -111,37 +111,39 @@ var areWeThereYet;
 
 // And we can use this with conditionals!
 
-for (var i = 1; i < 25; i++){
-    if (i % 6 == 0) console.log("Codeup");
-    else if (i % 2 == 0) console.log("Code");
-    else if (i % 3 == 0) console.log("Up");
-    else console.log(i);
-}
+// for (var i = 1; i < 25; i++){
+//     if (i % 6 == 0) console.log("Codeup");
+//     else if (i % 2 == 0) console.log("Code");
+//     else if (i % 3 == 0) console.log("Up");
+//     else console.log(i);
+// }
 
 // TODO: Quasar, how would we refactor the above back into a WHILE loop as we saw earlier?
-var i = 1; i < 25; i++
+// var i = 1; i < 25; i++
+//
+// while (i <= 25)
+// console.log
 
-while (i <= 25)
-console.log
-// Below is a funky example that works, but will rely on moving between different data types.
+// // Below is a funky example that works, but will rely on moving between different data types.
 // for (var i = "A"; i.length < 8; i = i + "A") {
 //     console.log("This is a bit of a tricky way to run a for loop, but hey, it works...");
 // }
 
-// We can get a loop to stop using break;
+// We can get a loop to stop using break; and to continue by using continue
 
 // var x = 0;
 //
 // while (true) {
 //     alert("This is the song that never ends. It just goes on and on my friends. Somebody started singing not knowing what it was, and now we'll all just keep on singing this because");
 //     x++;
+//     //the top half would go on forever
 //     if (x === 5) {
 //         alert("LambChop, cut it out!!")
 //         break;
 //     }
 // }
 
-
+//
 // for (var j = 5; j < 100000; j += 5) {
 //     if (j === 25) {
 //         break;
@@ -150,20 +152,18 @@ console.log
 // }
 
 // Notice that by having the break, we're able to get out of the loop that would otherwise run forever.
-
-
 // we can also use continue to allow a loop to skip an iteration.
-
-function allOddNumbersToX (x) {
-    for (var i = 0; i <= x; i++) {
-        if (i % 2 === 0) {
-            continue;
-        }
-        console.log(i);
-    }
-    return x;
-}
-
+//
+// function allOddNumbersToX (x) {
+//     for (var i = 0; i <= x; i++) {
+//         if (i % 2 === 0) {
+//             continue;
+//         }
+//         console.log(i);
+//     }
+//     return x;
+// }
+//
 // allOddNumbersToX(17);
 // allOddNumbersToX(18);
 
