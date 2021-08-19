@@ -18,8 +18,8 @@ var amountSold = Math.floor(Math.random() * 5) + 1;
 // }
 
 // var i = 1;
-
-do {
-    console.log('Sell more cones!! ' + allCones);
-
-} while (allCones < 100);
+//
+// do {
+//     console.log('Sell more cones!! ' + allCones);
+//
+// } while (allCones < 100);
