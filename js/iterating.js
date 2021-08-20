@@ -47,14 +47,25 @@ names.forEach(function(names,index,array,) {
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-var oneToFive = ['1', '2', '3', '4', '5']
+var oneToFive = [1, 2, 3, 4, 5]
 // var second = ['1', '2', '3', '4', '5']
 // var last = ['1', '2', '3', '4', '5']
-function firstFunction(element) {
-    console.log(first)
-    }
-first.forEach(firstFunction)
+// function first(x) {
+// return oneToFive.length[0]
+// }
+// function second(x){
+// return oneToFive.length[1]
+// }
+// function last(x) {
+// return oneToFive.length[4]
+// }
+
+    oneToFive.forEach(function(name,index,array) {
+        console.log(array[0], array[1], array[4])
+    })
 
 
+
+// console.log(first + second + last)
 
 })();

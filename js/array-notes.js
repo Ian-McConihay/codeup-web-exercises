@@ -131,7 +131,7 @@ var students = [
  */
 
 
-// standard syntax
+// // standard syntax
 // var pies = ["apple", "cherry", "key lime", "huckleberry"];
 
 // defining all three parameters
