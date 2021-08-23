@@ -4,4 +4,5 @@
 //
 // while (i <= 50 && i >= 0) {
 //     console.log('Is this your number? ' + i)
+//     if (i === i) break
 // }

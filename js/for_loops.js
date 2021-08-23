@@ -10,7 +10,7 @@ function showMultiplicationTable(num){
 
 showMultiplicationTable(7)
 //
-// var luckyNumber = Math.floor(Math.random() * 100);
+// var luckyNumber = Math.floor(Math.random() *  + 20)100);
 // function numberFacts(x) {
 //     if (x >= 0 && x % 2 == 0) {
 //         console.log( (x + 100) + ' Is positive and even')
