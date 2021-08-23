@@ -13,8 +13,8 @@
      */
 // var person = new Object() or var person = {}
 var person = {};
-    person.firstName = 'Morty'
-    person.lastName = 'Sanchez'
+    person.firstName = 'Morty '
+    person.lastName = 'Sanchez '
     person.sayHello = person.firstName + person.lastName + 'oh uhh oh geez hello!'
 
 
@@ -42,11 +42,19 @@ var person = {};
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+    shoppers.forEach (function(shopper){
+        if(shoppers.amount <= 200) {
+            console.log(shopper.name + 'need to spend 200$ for the discount to apply.')
+        } else {
+             console.log(shopper.amount * .12)
+        }
+    })
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -120,8 +128,8 @@ var libary = [bookMeditations, bookBuild, bookReady, bookSpeed, bookMurder,]
      *      ---
      *      ...
      */
-for (var i = 0; i <  ){
-
+for (var i = 0; i < libary.length; i++ ){
+console.log('Take a book at my collection ' + libary[i].title)
 }
     /**
      * Bonus:
@@ -133,5 +141,21 @@ for (var i = 0; i <  ){
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+function createBook(title, author) {
+    var newBook = {
+        title: title,
+        author: author,
+    }
+    libary.push(newBook)
+        console.log(libary)
+}
+
+
+// var newerbook = newbook
+// var createBook = Object.create(newBook)
+// function createBook(titlw, name){
+//     return newBook.
+// }
+
 
 // })();

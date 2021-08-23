@@ -67,14 +67,14 @@
 
 
 // TODO: Fill in your myCar object with properties of make, model, and year with the correct values. If you don't own a vehicle, fill in the details with your favorite vehicle.
-var myCar = {
-    make: 'Toyota',
-    model: 'Camry',
-    year: 2010
-};
-myCar.transmission = 'automatic'
+// var myCar = {
+//     make: 'Toyota',
+//     model: 'Camry',
+//     year: 2010
+// };
+// myCar.transmission = 'automatic'
 
-console.log(myCar)
+// console.log(myCar)
 //For me? I'm missing the year for myCar so. .
 
 // console.log(myCar);
@@ -96,14 +96,14 @@ console.log(myCar)
 //We can tap into our prior understanding of assigning variables thus far and assign a property to a variable:
 
 //What if we wanted to create a more complicated piece of data? Perhaps a list of our cars FEATURES?
-myCar.features = ['Sunroof', 'Leather', 'V6', 'bluetooth']
+// myCar.features = ['Sunroof', 'Leather', 'V6', 'bluetooth']
 //You can pull one by calling the index myCar.features[2] = V6
 
 //Now we could do something like this. . a list of those features in the console
 
-for(var i = 0; i < myCar.features.length ; i++){
-    console.log('Your car has these features: ' + myCar.features[i])
-}
+// for(var i = 0; i < myCar.features.length ; i++){
+//     console.log('Your car has these features: ' + myCar.features[i])
+// }
 // TODO: Add an array of features that your vehicle has!
 
 //I already added an array of features above in the lecture, so I'm good to go.
@@ -112,22 +112,22 @@ for(var i = 0; i < myCar.features.length ; i++){
 //Let's try nesting this object inside of our car object we've been building out
 
 // TODO: Nest a 'carOwner' object of your own into this growing myCar object and console.log the results!
-var carOwner = {
-    person: 'Spongebob',
-    age: 34,
-    address: 'bikini bottom',
-}
-myCar.owner = carOwner;
-console.log(myCar)
+// var carOwner = {
+//     person: 'Spongebob',
+//     age: 34,
+//     address: 'bikini bottom',
+// }
+// myCar.owner = carOwner;
+// console.log(myCar)
 //An object can also contain within itself a method (function). We can set it up similarly to our properties, but with a value that is the function expression
-myCar.turnCarOn = function(){
-    alert ('Push the button to my ' + this.make + ' ' + this.model +' ch..ch..brrroomm')
-};
-var wifeCar = {
-    owner: 'Wife',
-    make: 'Mazda',
-    model: 'Speed 6',
-}
+// myCar.turnCarOn = function(){
+//     alert ('Push the button to my ' + this.make + ' ' + this.model +' ch..ch..brrroomm')
+// };
+// var wifeCar = {
+//     owner: 'Wife',
+//     make: 'Mazda',
+//     model: 'Speed 6',
+// }
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                 Arrays of Objects               *
@@ -135,11 +135,11 @@ var wifeCar = {
 */
 
 //Let's tie some things together: Let's make a garage with another car!
-var myGarage = [myCar, wifeCar]
-
-myGarage.forEach(function(car){
-    car.turnCarOn();
-})
+// var myGarage = [myCar, wifeCar]
+//
+// myGarage.forEach(function(car){
+//     car.turnCarOn();
+// })
 
 
 //Now: loop through an ARRAY of OBJECTS, accessing our turnOn function for our vehicles
