@@ -120,8 +120,14 @@ var carOwner = {
 myCar.owner = carOwner;
 console.log(myCar)
 //An object can also contain within itself a method (function). We can set it up similarly to our properties, but with a value that is the function expression
-
-
+myCar.turnCarOn = function(){
+    alert ('Push the button to my ' + this.make + ' ' + this.model +' ch..ch..brrroomm')
+};
+var wifeCar = {
+    owner: 'Wife',
+    make: 'Mazda',
+    model: 'Speed 6',
+}
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                 Arrays of Objects               *
@@ -129,9 +135,22 @@ console.log(myCar)
 */
 
 //Let's tie some things together: Let's make a garage with another car!
+var myGarage = [myCar, wifeCar]
+
+myGarage.forEach(function(car){
+    car.turnCarOn();
+})
+
 
 //Now: loop through an ARRAY of OBJECTS, accessing our turnOn function for our vehicles
 //Also note: we used the keyword *this* on the other vehicle's turnOn function, so this will be a good experiment to see the results
 
 
 //One final TODO: A bigger task - set up your own garage and add at least another vehicle into it. Log your garage array to verify it contains the cars you want - once your garage has the right cars, write a loop to access some properties or a method from them!
+
+
+
+
+
+
+

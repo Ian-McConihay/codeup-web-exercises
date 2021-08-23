@@ -60,7 +60,7 @@ var person = {};
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-// var library = [
+
     var bookMeditations = {}
     bookMeditations.title = 'Meditations'
     bookMeditations.firstName = 'Marcus'
@@ -95,7 +95,7 @@ var person = {};
     bookMurder.lastName = 'Chief'
     bookMurder.author = bookMurder.firstName + ' ' + bookMurder.lastName
     console.log(bookMurder)
-// ]
+var libary = [bookMeditations, bookBuild, bookReady, bookSpeed, bookMurder,]
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -120,7 +120,9 @@ var person = {};
      *      ---
      *      ...
      */
+for (var i = 0; i <  ){
 
+}
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
