@@ -51,7 +51,7 @@ var oneToFive = [1, 2, 3, 4, 5]
 // var second = ['1', '2', '3', '4', '5']
 // var last = ['1', '2', '3', '4', '5']
 // function first(x) {
-// return oneToFive.length[0]
+// return oneToFive(x[0])
 // }
 // function second(x){
 // return oneToFive.length[1]
