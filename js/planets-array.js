@@ -1,11 +1,11 @@
 // (function(){
-//     "use strict";
-//     var pies = ['Apple', 'Blueberry', 'Pumpkin', 'Banana cream']
-//     function bakeinPie(x) {
-//        return x.slice(-3)
-//     }
-//
-//  console.log(bakeinPie(pies))
+//  //    "use strict";
+//  //    var pies = ['Apple', 'Blueberry', 'Pumpkin', 'Banana cream']
+//  //    function bakeinPie(x) {
+//  //       return x.slice(-3)
+//  //    }
+//  //
+//  // console.log(bakeinPie(pies))
 //     var planets = [
 //         'Mercury',
 //         'Venus',

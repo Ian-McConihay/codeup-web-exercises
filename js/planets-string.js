@@ -3,7 +3,7 @@
 
     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
     var planetsArray = planetsString.split('|')
-    var planetsJoin = planetsArray.join('')
+    var planetsJoin = planetsArray.join('<br/>')
     /**
      * TODO:
      * Convert planetsString to an array, and save it in a variable named
@@ -25,12 +25,12 @@
      * string, and <li> tags around each planet.
      */
 // / Create a function that will take in a formatted string of numbers and return an array of phone numbers without any symbols. Console.log the output of the returned array.
-// var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
-//  function cleanNum(x) {
-//     // var cleanedNum = []
-//
-//  }
-// console.log(phoneNumbers.split('\n',))
+var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
+ function cleanNum(x) {
+    // var cleanedNum = []
+
+ }
+console.log(phoneNumbers.split('\n',))
 
 
 
