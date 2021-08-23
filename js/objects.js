@@ -1,4 +1,4 @@
-(function() {
+// (function() {
     "use strict";
 
     /**
@@ -64,7 +64,7 @@ var person = {};
     var bookMeditations = {}
     bookMeditations.title = 'Meditations'
     bookMeditations.firstName = 'Marcus'
-    bookMeditations.lastName = 'Aurilus'
+    bookMeditations.lastName = 'Aurelius'
     bookMeditations.author = bookMeditations.firstName + ' ' + bookMeditations.lastName
     console.log(bookMeditations)
 
@@ -132,4 +132,4 @@ var person = {};
      *   `showBookInfo` function.
      */
 
-})();
+// })();
