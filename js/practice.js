@@ -52,7 +52,7 @@ if(true){
 }
 
 (condition) ? console.log('bla bla') : console.log('yeah yeah')
-var car = 'vroom vroom'
+// var car = 'vroom vroom'
 (car === 'vroom vroom' )
 
 
@@ -70,20 +70,20 @@ var isSunny = true;
     }
 
     function trafficColor() {
-
-    var trafficLight = prompt('What color is the traffic light?');
-
-    if(trafficLight.toLowerCase() === 'red'); {
-        alert('Stop');
-    } else if(trafficLight.toLowerCase() === 'yellow') {
-        alert('Slow down');
-    } else if(trafficLight.toLowerCase() === 'green') {
-    alert('GO');
-    } else {
-        alert('Be careful!')
-    }
-}
-trafficColor()
+//
+//     var trafficLight = prompt('What color is the traffic light?');
+//
+//     if(trafficLight.toLowerCase() === 'red'); {
+//         alert('Stop');
+//     } else if(trafficLight.toLowerCase() === 'yellow') {
+//         alert('Slow down');
+//     } else if(trafficLight.toLowerCase() === 'green') {
+//     alert('GO');
+//     } else {
+//         alert('Be careful!')
+//     }
+// }
+// trafficColor()
 
 
 
@@ -113,7 +113,7 @@ switch(bike) {
     default:
         alert(bike + " fast");
         break;
-}
+}}
 // Loops
 // while loop
 // do/while
