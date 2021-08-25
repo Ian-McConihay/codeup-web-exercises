@@ -149,7 +149,10 @@ function createBook(title, author) {
     libary.push(newBook)
         console.log(libary)
 }
-
+// function showBookInfo(x){
+//     return console.stringify(libary[x])
+// }
+// console.log(libary[0])
 
 // var newerbook = newbook
 // var createBook = Object.create(newBook)
