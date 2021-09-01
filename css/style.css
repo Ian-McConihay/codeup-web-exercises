@@ -6,3 +6,31 @@
 h2 {
     text-decoration: underline;
 }
+html {
+    background-color: #e1e1e1;
+}
+
+body {
+    background-image: url("");
+}
+
+li {
+    list-style: square;
+}
+
+body {
+    font-style: oblique;
+}
+
+table {
+width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: deeppink;
+}
