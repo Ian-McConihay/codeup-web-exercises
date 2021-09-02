@@ -5,30 +5,51 @@ body, html {
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
-
+body {
+    background-color: beige;
+}
 
 
 .message-message-info{
-    background-color: deepskyblue;
+    background-color: #879cef;
     padding: 5px;
-    border: 1px;
-    text-decoration-color: blue;
+    color: #0101c0;
+    border-radius: 5px;
+    border: 2px solid;
+    width: 80%;
+    margin: auto;
+    margin: 7px
 }
 
 .message-message-success{
-    background-color: lawngreen;
+    background-color: #8dc959;
     padding: 5px;
-    text-decoration-color: blue;
+    color: #016701;
+    border-radius: 5px;
+    border: 2px solid;
+    width: 80%;
+    margin: auto;
+    margin: 7px
 }
 
 .message-message-warning{
-    background-color: yellow;
+    background-color: #fdf976;
     padding: 5px;
-    text-decoration-color: blue;
+    color: #d0b92f;
+    border-radius: 5px;
+    border: 2px solid;
+    width: 80%;
+    margin: auto;
+    margin: 7px
 }
 
 .message-message-error{
-    background-color: indianred;
+    background-color: #ee6969;
     padding: 5px;
-    text-decoration-color: blue;
+    color: #b00000;
+    border-radius: 5px;
+    border: 2px solid;
+    width: 80%;
+    margin: auto;
+    margin: 7px
 }
