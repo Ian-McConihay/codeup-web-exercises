@@ -1,18 +1,52 @@
+/*      # for id selector is only used for typically 1 item
+        . for class is used for multiple things
+          for Element
+          You can do a p.class and it will apply to any paragraph with that class
+
+
+          specificity is essentially the ranking for same css selectors applied to the same element
+          The hierarchy of specificity is best explained by using a weighted or rank system
+            rank 1 elements that target a mass group like a or p and pseudo elements
+            rank 2 classes
+            rank 3 id selectors
+            rank 4 inline
+              classes
+  elements
+  ids
+  !important
+  order of CSS declarations
+  inline styling
+  selector combinations
+What does the "Cascading" mean in "Cascading Style Sheets"?
+*/
 .fancy-header {
-    color: blueviolet;
+    /*color: blueviolet;*/
     text-decoration: underline;
     text-align: center;
 }
+
 h2 {
     text-decoration: underline;
+    color: green;
 }
+.rank2 {
+    color: yellow;
+}
+#rank3 {
+    color: red;
+}
+
+
+
+
+
+
 html {
     background-color: #e1e1e1;
-    border: black 5px;
 }
 
 body {
-    background-image: url("");
+    /*background-image: url("");*/
 }
 
 li {
