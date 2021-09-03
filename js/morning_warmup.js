@@ -11,15 +11,14 @@ function tellFortune(numKids, partner, loc, jobName){
     return
 }
 tellFortune()
+    var dogAge= Math.floor((Math.random() * 6) + 1);
 
-
-// function tellFortune(numKids, partner, geolocation , jobTitle) {
-//     var numKids = 5;
-//     var partner = 'David Beckham';
-//     var geolocation = 'Costa Rica';
-//     var jobTitle = 'web developer';
-//
-//     var future = 'You will be a ' + jobTitle + ' in ' + geolocation + ', and married to ' +
-//         partner + ' with ' + numKids + ' kids.';
-//     console.log(future);
-// }
+console.log('You have also acquired a dog!' + ' It looks like he is ' + dogAge + ' years old.')
+console.log('Try out the calculateDogAge function!')
+console.log('Just type in the function and put your dogs age and then your own age.')
+function calculateDogAge(x, y){
+    var dogAge = x * 7
+    var yourDogAge = 7 * y
+    return console.log('Your dog is ' + dogAge + ' in human years and if you were a dog you would be ' + yourDogAge + '!')
+    // confirm('What is your gods age?' + x)
+}
