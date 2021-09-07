@@ -20,7 +20,7 @@ body {
     width: 100px;
     position: absolute;
     animation: jump 1.3s infinite;
-    top: 50%;
+    top: 55%;
     left: 40%;
 }
 .box {
