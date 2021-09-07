@@ -29,7 +29,7 @@ h2, h3 {
 
 .card {
     width: 400px;
-    height: 800px;
+    height: 720px;
     background: white;
     padding: 2em 1em;
     margin: 0 auto;
@@ -48,13 +48,15 @@ section:nth-of-type(1) {
     background: lightgreen;
     /* enter needed declarations here */
     /*display: flex;*/
-    /*flex-direction: row;*/
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 section:nth-of-type(1) div:last-child {
+    margin-bottom: 32px;
     flex-direction: column;
     align-items: flex-end;
+    /*justify-content: flex-end;*/
     /* enter needed declarations here */
 }
 
@@ -92,7 +94,7 @@ section:nth-of-type(3) {
 
 section:nth-of-type(3) h3 {
     /* enter needed declarations here */
-    justify-content
+    flex-grow: 1;
 }
 
 .orange-circle {
@@ -105,10 +107,11 @@ section:nth-of-type(3) h3 {
 
 .large-brown-box {
     height: 5em;
-    width: 5em;
+    width: 7em;
     background: brown;
     /* enter needed declarations here */
-    justify-content: space-evenly;
+    justify-content: space-between;
+
 }
 
 .large-brown-box:nth-of-type(2) {
@@ -117,6 +120,8 @@ section:nth-of-type(3) h3 {
 
 section:nth-of-type(5) {
     justify-content: space-evenly;
+    margin: 10px 0;
+
     /* enter needed declarations here */
 }
 
@@ -131,6 +136,7 @@ section:nth-of-type(6) {
     height: 14em;
     /* enter needed declarations here */
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .grey-box {
