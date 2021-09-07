@@ -58,10 +58,12 @@ a {
 }
 .profile-form{
     float: right;
+    padding-top: 10px;
 }
 .profile-image {
     position: absolute;
-    top: auto;
+    top: 230px;
+
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -86,14 +88,19 @@ a {
     color: var(--main-link-color);
 }
 .profile-details {
+
+    float: left;
     margin: 0 .5em;
     width: calc(25% - .5em)
 }
 .timeline {
+    float: right;
+    float: left;
     margin: 0 .5em;
-    width: calc(50% - .5em)
+    width: calc(47% - .5em)
 }
 .who-to-follow {
+    float: right;
     margin: 0 .5em;
     width: calc(25% - .5em)
 }
@@ -118,6 +125,7 @@ a {
     width: calc(100% - 50px);
 }
 .profile-items {
+    padding: 0px;
     list-style-type: none;
 }
 .profile-entry {
