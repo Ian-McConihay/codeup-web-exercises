@@ -50,13 +50,14 @@ a {
     color: var(--link-color);
 }
 .profile {
-    float: left;
+    /*float: left;*/
+    clear: left;
     height: 80px;
     line-height: normal;
     background: var(--light-bg);
 }
 .profile-form{
-    margin: auto;
+    float: right;
 }
 .profile-image {
     position: absolute;
