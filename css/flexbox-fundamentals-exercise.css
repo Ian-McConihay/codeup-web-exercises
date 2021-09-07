@@ -10,7 +10,7 @@ body {
 h1 {text-align: center;}
 
 h2, h3 {
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
 }
 
@@ -29,7 +29,7 @@ h2, h3 {
 
 .card {
     width: 400px;
-    height: 720px;
+    height: 740px;
     background: white;
     padding: 2em 1em;
     margin: 0 auto;
@@ -135,14 +135,17 @@ section:nth-of-type(6) {
     background: coral;
     height: 14em;
     /* enter needed declarations here */
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
+    /*align-self: center;*/
+    align-items: center;
 }
 
 .grey-box {
     background: grey;
     width: 3em;
     height: 3em;
+
 }
 
 .grey-box:nth-of-type(odd) {
