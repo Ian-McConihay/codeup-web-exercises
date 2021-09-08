@@ -24,6 +24,14 @@ body {
     height: 100vh;
     width: 100%;
     /* TODO: add a flex container to this selector */
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*flex-wrap: nowrap;*/
+    /*align-content: stretch;*/
+    /*flex-basis: 100%;*/
+
+
 }
 
 .flex-form {
@@ -32,6 +40,16 @@ body {
     border: 20px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     /* TODO: Add an automatic margin and a flex container to this selector */
+    display: flex;
+    margin: auto;
+    /*height: auto;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    /*align-self: stretch;*/
+    /*display: inline-block;*/
+    /*flex-basis: 100%;*/
+    /*float: left;*/
+    /*display: inline-block;*/
 }
 
 .flex-form > * {
@@ -53,6 +71,7 @@ body {
 }
 
 .destination {
+flex-basis: 15em;
     /* TODO:
         Add an explicit size for items along the main axis of 15em.
         Read more about Flex Basis: https://java.codeup.com/appendix/further-reading/html-css/flexbox-additional-concepts/#flex-basis */
