@@ -25,6 +25,7 @@ body {
     width: 100%;
     /* TODO: add a flex container to this selector */
     display: flex;
+    flex-direction: row;
     /*justify-content: center;*/
     /*align-items: center;*/
     /*flex-wrap: nowrap;*/
@@ -42,6 +43,8 @@ body {
     /* TODO: Add an automatic margin and a flex container to this selector */
     display: flex;
     margin: auto;
+    justify-content: center;
+    background-color: white;
     /*height: auto;*/
     /*flex-direction: row;*/
     /*align-items: center;*/
@@ -68,6 +71,7 @@ body {
     border-top: 1px solid #b4d455;
     border-bottom: 1px solid #b4d455;
     color: white;
+    margin: 0;
 }
 
 .destination {
