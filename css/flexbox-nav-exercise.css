@@ -23,7 +23,7 @@ nav a {
 
 }
 nav a:hover {
-    background: black;
+    background: lightblue;
 }
 nav ul li:nth-child(4){
     /*margin-left: auto;*/
@@ -32,4 +32,13 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.search {
+
+}
+.cart {
+
+}
+.profile {
+
 }
