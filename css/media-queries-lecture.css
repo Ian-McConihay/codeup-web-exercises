@@ -1,0 +1,11 @@
+.box {
+    background-color: darkgreen;
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    margin: .5em;
+    /*display: none;*/
+}
+@media screen and (min-width: 576px) {
+    display: inline-block
+}
