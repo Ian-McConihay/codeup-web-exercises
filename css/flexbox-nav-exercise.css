@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-
+    background-color: whitesmoke;
     margin: 0;
 }
 nav {
@@ -36,8 +36,8 @@ h1 {
 
 }
 nav ul li:nth-child(5) {
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
     position: absolute;
     font-size: 2em;
     padding: .2em;
