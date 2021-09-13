@@ -1,7 +1,8 @@
 
-@media screen and (min-width: 365px ) {
+@media screen and (min-width: 305px ) and (max-width: 850px) {
     body {
-        /*width: 100%;*/
+        /*width: 100%;
+        Set the width in px and the margin out*/
         display: flex;
         flex-direction: column;
         /*justify-content: center;*/
@@ -9,9 +10,12 @@
         /*position: absolute;*/
         /*flex-wrap: wrap;*/
         /*margin: auto;*/
-        /*!*display: inline-block;*!*/
+        /*/*display: inline-block;*/
         /*justify-content: space-between;*/
         /*padding: 0 .5em;*/
+    }
+    h1 {
+        text-align: center;
     }
     .alert-info{
         margin-top: 1em;
@@ -41,8 +45,64 @@
         font-style: italic;
     }
     img {
-        width: 339px;
+
+        width: 100%;
         height: 224px;
     }
 
+}
+
+@media screen and (min-width: 900px ) and (max-width: 991px){
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    div.alert-info {
+        display: none;
+        visibility: hidden;
+    }
+    nav {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+       justify-content: flex-end;
+        margin: 10px 0;
+
+    }
+    li {
+        display: inline-block;
+        margin: 0 5px;
+        /*flex-direction: row;*/
+        /*justify-content: flex-end;*/
+    }
+    img {
+        width: 890px;
+        height: 385px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.sub-section {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 150px;
+
+    /*justify-content: space-between;*/
+
+}
+footer {
+    width: 200px;
 }
