@@ -5,13 +5,17 @@
     margin-left: auto;
 }
 h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*display: flex;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
 
 }
 
-h5 {
+.card-title {
+    height: 2em;
+    /*text-align: center;*/
+    /*size: 90px 0;*/
 
 }

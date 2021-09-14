@@ -22,13 +22,15 @@ function calculateDogAge(x, y){
     return console.log('Your dog is ' + dogAge + ' in human years and if you were a dog you would be ' + yourDogAge + '!')
     // confirm('What is your gods age?' + x)
 }
-var hasTacos = ['muffin', 'banna', 'yogurt', 'cereal', 'brisket and egg taco', 'taco']
+var hasTacos = ['muffin', 'banna', 'yogurt', 'cereal', 'brisket and egg taco']
 var noTacos = ["parfait", 'omelette de frumage', 'protein shake', 'fating']
 console.log(hasTacos.includes('taco'))
 
 function tacoTuesday(arr){
     for (var i = 0; i < arr.length; i++){
-        console.log(arr[i])
+        if(arr[i].includes('taco')){
+            return true;
+        }
     }
 }
 
