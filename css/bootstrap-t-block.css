@@ -19,13 +19,22 @@
 /*    !*margin-left: 450px;*!*/
 /*    flex-basis: 60%;*/
 /*}*/
+body {
+    padding: 1em;
+    background-color: #DDDDDD;
+}
+
+
+
 hr {
     border-top: 5px solid green;
 }
 .card-body {
-    padding: 20px;
+    margin: 0;
+    padding: 1em;
 }
 .card {
+    background-color: powderblue;
     margin: 0;
 }
 header{

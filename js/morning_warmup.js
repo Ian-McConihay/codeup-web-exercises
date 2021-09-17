@@ -37,3 +37,10 @@ function tacoTuesday(arr){
 function isTaco(taco){
     return taco.some(word => input.toLowerCase().includes(word.toLowerCase()));
 }
+
+
+var order = “nam khao, pad thai, spring rolls, 3 pieces house roll, iced tea, iced tea”;
+var orderAsObject = {
+    orderContent: [“nam khao”, “pad thai”, “spring rolls”, “3 piece house roll”, “iced tea”, “iced tea”],
+orderUp: false;
+}
