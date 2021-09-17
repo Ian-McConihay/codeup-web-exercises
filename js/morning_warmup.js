@@ -39,8 +39,8 @@ function isTaco(taco){
 }
 
 
-var order = “nam khao, pad thai, spring rolls, 3 pieces house roll, iced tea, iced tea”;
-var orderAsObject = {
-    orderContent: [“nam khao”, “pad thai”, “spring rolls”, “3 piece house roll”, “iced tea”, “iced tea”],
-orderUp: false;
-}
+// var order = 'nam khao, pad thai, spring rolls, 3 pieces house roll, iced tea, iced tea';
+// var orderAsObject = {
+//     orderContent: [“nam khao”, “pad thai”, “spring rolls”, “3 piece house roll”, “iced tea”, “iced tea],
+// orderUp: false;
+// }
