@@ -1,52 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-
-
-
-<script>
-<!--    BOM     -->
-// //TODO: Finish coding this program. You need to stop the setInterval() method after the showTime() function has run five times
-//
-//
-// let count = 0;
-//
-// function showTime() {
-//
-// // return new date and time
-// let dateTime = new Date();
-//
-// // return the time
-// let time = dateTime.toLocaleTimeString();
-//
-// count += 1;
-//
-// //if the count reaches 5, stop the program.
-// if(count >= 5){
-//     console.log('Last time getting Timestamped!')
-//     clearInterval(display)
-// }
-// console.log(time)
-// }
-//
-// let display = setInterval(showTime, 2000);
-//
-//
-// function greet(){
-//     console.log('hello world');
-// }
-// var delayedGreeting = window.setTimeout(greet, 3000);
-//
-// window.clearTimeout(delayedGreeting)
-
-// window.location = 'http://www.google.com';
-
-//DOM
 //~*~ Locating individual elements
 document.getElementById("top-header")
 var topHeader = document.getElementById("top-header")
@@ -94,14 +45,3 @@ console.log(topHeader);
 // We had to use [] syntax since the property name has a dash
 
 // Replace dashes with camelCase to use standard . syntax
-
-
-
-
-</script>
-
-
-
-
-</body>
-</html>
