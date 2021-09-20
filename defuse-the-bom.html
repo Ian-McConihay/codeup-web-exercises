@@ -26,12 +26,17 @@
 
         detonationTimer--;
     }
+    let display = setInterval(updateTimer, 1000)
 
     // TODO: When this function runs, it needs to
     // cancel the interval/timeout for updateTimer()
     function defuseTheBOM() {
-
+        alert('Saved the day!')
+        return clearInterval(display)
     }
+
+
+
 
     // Don't modify anything below this line!
     //
