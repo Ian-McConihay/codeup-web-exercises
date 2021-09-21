@@ -37,7 +37,21 @@ function tacoTuesday(arr){
 function isTaco(taco){
     return taco.some(word => input.toLowerCase().includes(word.toLowerCase()));
 }
+var num = 0
+function logEvens(num) {
+    for (var i = 0; i <= num; i++) {
+        if (i % 2 === 0) {
+            console.log(i)
+        }
+    }
+}
 
+for (var i=1; i < 20; i++){
+    if (i % 15 == 0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
+}
 
 // var order = 'nam khao, pad thai, spring rolls, 3 pieces house roll, iced tea, iced tea';
 // var orderAsObject = {

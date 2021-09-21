@@ -61,17 +61,30 @@ var bottomLink = document.getElementById
 console.log(bottomLink)
 
 //hasAttribute: return a BOOLEAN if the element has this attribute
+console.log(bottomLink.hasAttribute("id"))
+console.log(bottomLink.hasAttribute("href"))
 //getAttribute: what's that attribute's value? [the right side of the equation]
-//setAttribute: let's change that attribute's value!
+console.log(bottomLink.getAttribute("href"))
 
+//setAttribute: let's change that attribute's value!
+bottomLink.setAttribute('href', 'https://duckduckgo.com')
+bottomLink.setAttribute('id', 'bottomLink')
 
 //Accessing or Modifying styles
 
+
 // demonstrate the BODY as a thing to manipulate - the BODY can be targeted as any other thing:
+var bodyElement = document.getElementsByTagName
+('body')[0];
+bodyElement.style['background-color'] = 'color'
+bodyElement.style.backgroundColor = 'green'
+bodyElement.style.fontFamily = 'Sans-Serif'
 
 // Get the body element (notice we need to use index 0 of the array!)
+document.getElementsByClassName('hat-sold')[0].getAttribute()
 
 // Change the body font color
+
 
 // We had to use [] syntax since the property name has a dash
 
