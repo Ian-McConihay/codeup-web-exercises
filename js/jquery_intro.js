@@ -9,7 +9,8 @@ $(document).ready(function() {
 var mainHeading = document.getElementById('main-heading');
 mainHeading.style.color = "green";
 //These are the same.
-$('h1').text()
+var contents = $('h1').html();
+alert(contents);
 $('#main-heading').css('color', 'green');
 //
 

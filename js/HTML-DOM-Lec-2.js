@@ -1,5 +1,21 @@
 var button1 = document.getElementById('btn1');
 var button2 = document.getElementById('btn2');
+var button1 = $('#btn1');
+var button2 = $('#btn2');
+
+button1.click(function(e) {
+    alert('Button 1 clicked')
+    // $('p').css('background-color', 'blue')
+})
+button2.dblclick(function() {
+    alert('button 2 double clicked')
+})
+
+$('p').hover(function (){
+    $(this).css('background-color', 'blue')
+}, function() {
+    $(this).css('background-color', 'inherit')
+});
 
 
 var rebeccaPurple = function (){
