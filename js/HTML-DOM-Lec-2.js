@@ -1,5 +1,5 @@
-var button1 = document.getElementById('btn1');
-var button2 = document.getElementById('btn2');
+// var button1 = document.getElementById('btn1');
+// var button2 = document.getElementById('btn2');
 var button1 = $('#btn1');
 var button2 = $('#btn2');
 
@@ -16,6 +16,22 @@ $('p').hover(function (){
 }, function() {
     $(this).css('background-color', 'inherit')
 });
+
+
+
+
+
+// $("body").keydown(function (event){
+//     console.log(event.key);
+// })
+
+// $("body").keypress(function (event){
+//     console.log(event.key);
+// })
+
+$("body").keyup(function (event){
+    console.log(event.key);
+})
 
 
 var rebeccaPurple = function (){
