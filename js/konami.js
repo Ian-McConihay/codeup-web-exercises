@@ -35,19 +35,19 @@
 //
 //
 
-var cheatCode = [], konami = "38,38,40,40,37,39,37,39,66,65";
+var cheatCode = [], konami = "38,38,40,40,37,39,37,39,65,66";
 
 
-$(document).keydown(function(e) {
+$(document).keyup(function(e) {
 
     cheatCode.push( e.keyCode );
 
     if ( cheatCode.toString().indexOf( konami ) >= 0 ) {
 
-        $(document).unbind('keydown',arguments.callee);
+        $(document).unbind('keyup',arguments.callee);
 
         // do something awesome
-        $("body").addClass("konami");
+        alert('Final Form')
 
     }
 
