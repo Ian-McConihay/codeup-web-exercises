@@ -60,8 +60,29 @@ console.log(filterArray(messyArr));
  * Return [0, 0] for an empty string.
  * Return in the order of [hashes, pluses].
  */
-
-
+var hashPlusCountArr = "#+++#+#++#"
+function hashPlusCount(arr){
+   var plus = 0;
+   var hash = 0;
+   var makeArray = arr.split("")
+   var newArray = []
+    for(var i = 0; i < makeArray.length; i++){
+        if (arr[i] == '#'){
+            hash += 1;
+        } else if(arr[i] == '+'){
+            plus += 1;
+        }
+    }
+    newArray.push(hash);
+    newArray.push(plus);
+    console.log(newArray)
+}
+hashPlusCount(hashPlusCountArr)
+// function filterArrayNext(value) {
+//     return typeof value === "symbol";
+// }
+// var f = arr.filter(filterArrayNext);
+// return  f;
 /**
  * Amplify the Multiples of Four
  * In this challenge, you must generate a sequence of consecutive numbers, from a lower bound that will always be equal to 1, up to a variable given higher bound (including the bounds in the sequence).
