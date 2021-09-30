@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script>
+        // var colors = ['red', 'blue', 'green'];
+        // $.each(colors , function (index, value){
+        //     // alert(index + ':' + value);
+        // });
+
+
+        $(document).ready(function(){
+        $('.dt').click(function() {
+            $("dt").each(function(index){
+                $('dt').css('color', 'blue')
+            });
+        });
+    });
+
+
+
+
+
+
+        $(document).ready(function(){
+            $('.dd').click(function() {
+                $("dd").each(function(index){
+                    $('dd').css('visibility', 'hidden')
+                });
+            });
+        });
+
+
+        $(document).ready(function(){
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('.dd').toggleClass('dd');
+            });
+        });
+
+    </script>
+
+
+<dl>
+    <dt>Yellowstone</dt>
+    <dd class="invisible">Why Bob ate an apple was in the basket.</dd>
+    <dt >Yosemite</dt>
+    <dd class="invisible"> All the faith he had had had had no effect on the outcome of his life.</dd>
+    <dt>Glacier National Park</dt>
+    <dd class="invisible">The complex houses married and single soldiers and their families.</dd>
+    <dt>Grand Canyon.</dt>
+    <dd class="invisible">The man the professor the student has studies Rome.</dd>
+    <dt>Zion National Park.</dt>
+    <dd class="invisible">Buffalo buffalo buffalo buffalo buffalo buffalo buffalo buffalo.</dd>
+    <dt>Grand Teton National Park</dt>
+    <dd class="invisible">Let me get a roast history chicken and a seizure salad</dd>
+    <dt>Bryce Canyon National Park.</dt>
+    <dd class="invisible"> “entitled” or titled</dd>
+    <dt >Arches National Park.</dt>
+    <dd class="invisible">for all intensive purposes or for all intents and purposes. </dd>
+    <dt>Rocky Mountain National Park</dt>
+    <dd class="invisible">A doggy dog world or dog eat dog world</dd>
+    <dt>Sequoia National Park</dt>
+    <dd class="invisible">All and all or All in all</dd>
+</dl>
+<button class="dt">Target DD</button>
+<button class="dd">Targett DT</button>
+
+
+
+
+</body>
+</html>

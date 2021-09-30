@@ -21,7 +21,7 @@
 //Unit testing using TDD using describe it expect. or come up with something better
 //
 // 7. What do you know about object-oriented programming and object relational mapping?
-//Encapsulation: Reduce complexity + increase reusability------Abstraction: Reduce Complexity + isolate impact of changes
+//The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:+ increase reusability------Abstraction: Reduce Complexity + isolate impact of changes
 //Inheritance: Eliminate redundant code-----Polymorphism: Refactor ugly switch/case statements
 //
 //ORM is creating a class of objects attached to a table that can continually be added too
