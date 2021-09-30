@@ -13,7 +13,7 @@ $('body').css('background-color', 'grey')
  * All test arrays will have at least one element and are valid.
  */
 var minMaxArr = [1,2,3,4,5]
-var minMax = function(arr){
+function minMax(arr){
     if(arr.pop() + arr.shift())
     return arr
 }
@@ -35,7 +35,16 @@ console.log(minMax(minMaxArr))
  * Numbers in the array should not repeat.
  * The original order must be maintained.
  */
+    var messyArr = [1, 'a', 13, 'ab', 123]
 
+function filterArray(arr) {
+    function filterArrayNext(value) {
+        return typeof value === "number";
+    }
+    var f = arr.filter(filterArrayNext);
+    return  f;
+}
+console.log(filterArray(messyArr));
 /**
  * Hashes and Pluses
  * Create a function named hashPlusCount that returns the number of hashes and pluses in a string.
