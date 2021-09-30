@@ -16,7 +16,7 @@
         //     // alert(index + ':' + value);
         // });
 
-
+        //H3 color change
         $(document).ready(function(){
         $('.dt').click(function() {
             $("dt").each(function(index){
@@ -25,9 +25,11 @@
         });
     });
 
-
-
-
+        //Visibility toggle
+        $('.invisible').css('visibility', 'hidden')
+        $("button").click(function(){
+            $("dd").toggleClass("invisible");
+        });
 
 
         $(document).ready(function(){
@@ -39,12 +41,24 @@
         });
 
 
-        $(document).ready(function(){
-            $('#highlight-important').click(function(event) {
+        $('document').ready(function(){
+            $('button').click(function(event) {
                 event.preventDefault();
-                $('.dd').toggleClass('dd');
+                $('.dd').toggleClass('.invisible');
             });
         });
+        //Last list item change color
+        $('document').ready(function(){
+            $('button').click(function(e) {
+                e.preventDefault();
+                $("li").last().css( "color", "red" );
+            });
+        });
+
+
+
+        $('.last').last().css('background-color', '#FF0');
+        $('.box').css('border', '3px solid black').css('width', '100px').css('height', '100px')
 
     </script>
 
@@ -72,10 +86,36 @@
     <dd class="invisible">All and all or All in all</dd>
 </dl>
 <button class="dt">Target DD</button>
-<button class="dd">Targett DT</button>
+<button class="dd">Target DT</button>
 
+<div class="box">
+<h3>List 1</h3>
+<ul>
+    <li>Yellowstone</li>
+    <li>Yellowstone</li>
+    <li>Yellowstone</li>
+</ul>
+</div>
 
+<div class="box">
+<h3>List 2</h3>
+<ul>
+    <li>Yosemite</li>
+    <li>Yosemite</li>
+    <li>Yosemite</li>
+</ul>
+</div>
 
+<div class="box">
+<h3>List 3</h3>
+<ul>
+    <li>Grand Canyon</li>
+    <li>Grand Canyon</li>
+    <li>Grand Canyon</li>
+</ul>
+</div>
+
+<button class="last">Target last</button>
 
 </body>
 </html>
