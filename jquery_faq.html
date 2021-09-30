@@ -42,6 +42,13 @@
             });
         });
 
+        $('dd').addClass('invisible');
+        $('.invisible').css('visibility', 'hidden');
+
+        $('a').click(function(e){
+            e.preventDefault();
+            $('dd').toggleClass('invisible')
+        })
 
         // $('document').ready(function(){
         //     $('button').click(function(event) {
