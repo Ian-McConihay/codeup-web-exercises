@@ -11,6 +11,8 @@
 
 
     <script>
+        $('.last').last().css('background-color', '#FF0');
+        $('.box').css('border', '3px solid black').css('width', '100px').css('height', '100px')
         // var colors = ['red', 'blue', 'green'];
         // $.each(colors , function (index, value){
         //     // alert(index + ':' + value);
@@ -41,24 +43,36 @@
         });
 
 
-        $('document').ready(function(){
-            $('button').click(function(event) {
-                event.preventDefault();
-                $('.dd').toggleClass('.invisible');
-            });
-        });
+        // $('document').ready(function(){
+        //     $('button').click(function(event) {
+        //         event.preventDefault();
+        //         $('.dd').toggleClass('.invisible');
+        //     });
+        // });
         //Last list item change color
         $('document').ready(function(){
-            $('button').click(function(e) {
-                e.preventDefault();
-                $("li").last().css( "color", "red" );
+            $('.last').click(function(e) {
+                $("ul li").last().css( "color", "red" );
+            });
+        });
+
+        //first list item change color
+        $('document').ready(function(){
+            $('li').click(function(e) {
+                $("div ul li").first().css( "color", "green" );
+            });
+        });
+
+        //H3 light
+        $(document).ready(function(){
+            $('h3').click(function() {
+                $("ul").each(function(index){
+                    $('li').css('font-weight', 'bold')
+                });
             });
         });
 
 
-
-        $('.last').last().css('background-color', '#FF0');
-        $('.box').css('border', '3px solid black').css('width', '100px').css('height', '100px')
 
     </script>
 
@@ -116,6 +130,6 @@
 </div>
 
 <button class="last">Target last</button>
-
+<button class="h3">Target h3</button>
 </body>
 </html>
