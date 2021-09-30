@@ -1,3 +1,5 @@
+$('h1').css('display', 'flex').css('flex direction', 'column').css('align-items', 'center').css('justify-content', 'center')
+$('body').css('background-color', 'grey')
 /**
  * Find the Smallest and Biggest Numbers
  * Create a function named minMax that takes an array of numbers and return both the minimum and maximum numbers, in that order.
@@ -10,7 +12,12 @@
  * Notes
  * All test arrays will have at least one element and are valid.
  */
-
+var minMaxArr = [1,2,3,4,5]
+var minMax = function(arr){
+    if(arr.pop() + arr.shift())
+    return arr
+}
+console.log(minMax(minMaxArr))
 
 /**
  * Filter out Strings from an Array
