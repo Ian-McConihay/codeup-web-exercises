@@ -53,9 +53,9 @@ $(document).keyup(function(e) {
 
         $(document).unbind('keyup',arguments.callee);
 
-        // do something awesome
         $('.giphy-embed').css('display', 'initial').effect('pulsate')
         $('audio#9000')[0].play()
+
     }
 
 });

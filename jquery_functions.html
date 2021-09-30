@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script>
+
+        $(document).ready(function(){
+        $('button').click(function() {
+            $("li").each(function(index){
+                $.effect('explode')
+            });
+        });
+    });
+        var colors = ['red', 'blue', 'green'];
+        $.each(colors , function (index, value){
+            alert(index + ':' + value);
+        });
+
+    </script>
+
+
+<ul>
+    <li>Red</li>
+    <li>Blue</li>
+    <li>Green</li>
+</ul>
+<button>Get Values</button>
+
+
+
+
+
+</body>
+</html>
