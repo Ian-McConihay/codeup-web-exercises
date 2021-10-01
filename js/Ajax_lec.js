@@ -14,9 +14,9 @@ var obj = {
 
 // Notice that the largest difference is the keys are strings (in double quotes).
 //
-// console.log(obj.key);
-// console.log(obj.number);
-// console.log(obj.arr);
+console.log(obj.key);
+console.log(obj.number);
+console.log(obj.arr);
 
 // We still interact with this object just the same.
 
@@ -24,29 +24,36 @@ var obj = {
 // .ajax :: our first API request
 
 // // .ajax(url) - without any OPTIONS, defaults to a GET request:
-// $.ajax("putHookbinLinkHere").done(function(data){
+// $.ajax("https://hookb.in/YVD3aoeZaMCQERGGERPr").done(function(data){
 //     console.log(data);
 // })
 
 // .ajax also has a wealth of options we can use in our efforts as programmers:
 // This example: Send out a POST request with some DATA
-// $.ajax("",
-//     {
-//         type: "POST",
-//         data: {
-//             cohort: "Quasar",
-//             type: "Web Development",
-//             yearStarted: 2021
-//         }
-//     })
+$.ajax("https://hookb.in/YVD3aoeZaMCQERGGERPr",
+    {
+        type: "POST",
+        data: {
+            cohort: "Quasar",
+            type: "Web Development",
+            yearStarted: 2021
+        },
+        data:{
+            class: "Armor",
+            type: "Knight",
+            weapon: "Sword",
+            defence: "Kite Shield"
+        }
+    })
 
 //TODO: Before we move on: Let's GET a random recipe together :)
 // Help me finish the following AJAX method to console.log the data that comes back!
 // https://www.themealdb.com/ < main website url
 // https://www.themealdb.com/api.php < api documentation main page (hint: looks like there's some kind of URL beneath the 'lookup a single random meal' heading. . and our AJAX method is looking for a url)
 
-// $.ajax("url").done(function(data){
-// //do something with data here})
+$.ajax("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data) {
+    console.log(data);
+})
 
 // ~*~ working with responses ~*~
 
@@ -56,23 +63,24 @@ var obj = {
 //
 // $(document).ready(function(){
 //     console.time("recipeAPI");
+//     console.time('javascriptItself')
 //     var randomFact = $.ajax("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data){
-//         console.log(randomFact)
+//         // console.log(randomFact)
 //     });
 //     console.timeEnd("recipeAPI");
 // })
-
+// console.timeEnd('javascriptItself')
 // Different MS = different response times BACK from our API
 
 // .done - when our process is complete [done], do the following [callback function]
 //
-// $.ajax("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data, status, jqXhr){
-//     alert("AJAX status : " + status);
-//
-//     console.log("Data returned from server:");
-//     console.log(data);
-//     // console.log(jqXhr);
-// });
+$.ajax("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data, status, jqXhr){
+    alert("AJAX status : " + status);
+
+    console.log("Data returned from server:");
+    console.log(data);
+    // console.log(jqXhr);
+});
 
 // Above, we've used two parameters in our .done callback function: status and data for different purposes
 
