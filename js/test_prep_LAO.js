@@ -111,8 +111,11 @@ hashPlusCount(hashPlusCountArr)
  * A number a amplified by a factor b can also be read as: a * b.
  * A number a is exactly divisible by a number b when the remainder of the division a / b is equal to 0.
  */
-
-
+// function amplifiedfour(x) {
+//     for(i = 0; i <= 8; i++)
+//     if (([i] % 4 = 0) * 10){
+//     }
+// }
 /**
  * Record Temperatures
  * You are given two arrays that each contain data that represents the min and max weather temperatures for each day of the week.You are given two arrays that each contain data that represents the min and max weather temperatures for each day of the week.
@@ -615,8 +618,14 @@ hashPlusCount(hashPlusCountArr)
  * Notes
  * For an added challenge, try to solve this without using strings.
  */
-
-
+function count(arr){
+    var makeArray = arr.split()
+    var newArray = []
+    for(var i = 0; i < makeArray.length; i++){
+        return arr[i]
+    }
+}
+console.log(count('0290292'))
 /**
  * TODO:
  * Remove the Letters ABC

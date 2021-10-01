@@ -62,6 +62,13 @@
                 $("ul li").last().css( "color", "red" );
             });
         });
+        //Larry last
+        // $('.last').click(function(event){
+        //     event.preventDefault();
+        //     $('ul').each(function () {
+        //         $(this.children().last().css('background-color', 'yellow'))
+        //     })
+        // })
 
         //first list item change color
         $('document').ready(function(){
@@ -69,6 +76,11 @@
                 $("div ul li").first().css( "color", "green" );
             });
         });
+        //larry first
+        $('li').click(function(event){
+            event.preventDefault();
+            $(this)
+        })
 
         //H3 light
         $(document).ready(function(){
@@ -78,12 +90,15 @@
                 });
             });
         });
-
-
+        //Layy h3
+        $('h3').click(function(event){
+            event.preventDefault();
+            $(this).next().css('font-weight', 'bold');
+        })
 
     </script>
 
-
+<hr>
 <dl>
     <dt>Yellowstone</dt>
     <dd class="invisible">Why Bob ate an apple was in the basket.</dd>
@@ -108,7 +123,7 @@
 </dl>
 <button class="dt">Target DD</button>
 <button class="dd">Target DT</button>
-
+<hr>
 <div class="box">
 <h3>List 1</h3>
 <ul>
@@ -136,7 +151,8 @@
 </ul>
 </div>
 
-<button class="last">Target last</button>
+<button tyoe='button' class="last">Target last</button>
 <button class="h3">Target h3</button>
 </body>
 </html>
+<hr>
