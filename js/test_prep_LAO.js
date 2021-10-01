@@ -393,6 +393,15 @@ hashPlusCount(hashPlusCountArr)
  */
 
 
+
+
+
+
+
+
+//this one
+
+
 /**
  * Get Sum of People's Budget
  * Create the function named getBudgets that takes an array with objects and returns the sum of people's budgets.
@@ -410,6 +419,18 @@ hashPlusCount(hashPlusCountArr)
  *        { name: "Martin",  age: 16, budget: 1600 }
  *    ]) ➞ 62600
  */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
@@ -539,6 +560,16 @@ hashPlusCount(hashPlusCountArr)
  */
 
 
+
+
+
+
+
+
+
+//this one
+
+
 /**
  * Count total pets
  * Write a function named totalPets that accepts an array of objects where each object represents a person, and has a 'pets' property for their owned pets. The function should return the sum of every object's numPets property.
@@ -552,6 +583,23 @@ hashPlusCount(hashPlusCountArr)
  *    ]) ➞ 11
  */
 /**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  * TODO:
  * Add up the Numbers from a Single Number
  * Create a function named addUp that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
