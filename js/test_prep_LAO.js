@@ -420,9 +420,20 @@ hashPlusCount(hashPlusCountArr)
  *    ]) ➞ 62600
  */
 
+getBudgets = [
+    { name: "John", age: 21, budget: 23000 },
+    { name: "Steve",  age: 32, budget: 40000 },
+    { name: "Martin",  age: 16, budget: 2700 }
 
-
-
+]
+// console.log(getBudgets.Sum({ budget }));
+function getBudget(){
+    var total = 0;
+    for (var i = 0; i < getBudgets.length; i++) {
+        total = total + getBudgets[i].budget;
+    }
+    return total;
+}
 
 
 
@@ -571,7 +582,7 @@ hashPlusCount(hashPlusCountArr)
 
 
 /**
- * Count total pets
+ *  Count total pets
  * Write a function named totalPets that accepts an array of objects where each object represents a person, and has a 'pets' property for their owned pets. The function should return the sum of every object's numPets property.
  *
  * Examples
@@ -581,38 +592,47 @@ hashPlusCount(hashPlusCountArr)
  *       {name: 'Douglas Hirsh', pets: 8},
  *       {name: 'Kenneth Howell', pets: 2}
  *    ]) ➞ 11
+ /**
+ *
  */
-/**
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- * TODO:
- * Add up the Numbers from a Single Number
- * Create a function named addUp that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
- *
- * Examples
- *
- * >> addUp(4) ➞ 10
- * >> addUp(13) ➞ 91
- * >> addUp(600) ➞ 180300
- *
- * Notes
- * Expect any positive number between 1 and 1000.
- */
+totalPets = [
+        {name: 'Fernando Mendoza', pets: 1},
+        {name: 'Douglas Hirsh', pets: 8},
+        {name: 'Kenneth Howell', pets: 2}
+   ]
+
+
+function addPets() {
+    var counter = 0
+    for (var i = 0; i < totalPets.length; i++) {
+        totalPets[i].pets === 0
+        counter = counter + totalPets[i].pets
+    }
+    return counter
+}
+// console.log(addPets(totalPets))
+
+
+
+
+
+
+
+ //
+ //
+ // * TODO:
+ // * Add up the Numbers from a Single Number
+ // * Create a function named addUp that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+ // *
+ // * Examples
+ // *
+ // * >> addUp(4) ➞ 10
+ // * >> addUp(13) ➞ 91
+ // * >> addUp(600) ➞ 180300
+ // *
+ // * Notes
+ // * Expect any positive number between 1 and 1000.
+ // */
 
 
 /**
