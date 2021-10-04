@@ -12,18 +12,38 @@ console.log('hello');
 // A map center can be set by passing in the latitude and longitude coordinates of a location as an array [LONGITUDE_VALUE, LATITUDE_VALUE]
 // Zoom levels range from 0 up to 24, with 0 being a global view and 24 being the most detailed at street level (the max zoom level depends on the location).
 
-//TODO: Set map to the San Antonio area using the coordinates [-98.4861, 29.4252]
+//TODO: Set map to the San Antonio area using the coordinates
+mapboxgl.accessToken = mapboxApiToken;
+console.log(mapboxApiToken);
 
-// mapboxgl.accessToken = YOUR_API_TOKEN_HERE;
-// console.log(mbKey);
-
-
+// var map = new mapboxgl.Map({
+//     container: "map",
+//     style: 'mapbox://styles/mapbox/satellite-streets-v11',
+//     center:[-98.4861, 29.4252],
+//     zoom: 10,
+//
+// })
 
 
 //TODO: Experiment with different map styles, zoom levels, and centers. You will need to reference the MapBox docs! (10 mins~)
 
+var map = new mapboxgl.Map({
+    container: "map",
+    style: 'mapbox://styles/mapbox/satellite-streets-v11',
+    center:[-98.4861, 29.4252],
+    zoom: 10,
+})
 
+// var marker = new mapboxgl.Marker()
+//     .setLngLat([-98.4861, 29.4252])
+//     .addTo(map);
 
+map.addControl(
+    new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
+    })
+);
 
 /**********************************************
  * 					MARKERS
@@ -34,7 +54,9 @@ console.log('hello');
 
 
 // TODO TOGETHER: Add a marker to the map using the following coordinates [-98.4861, 29.4260]. This marker will mark the Alamo on our map.
-
+var marker = new mapboxgl.Marker({color: "black"})
+    .setLngLat([-98.4861, 29.4260])
+    .addTo(map);
 
 // TODO TOGETHER: Change the color of the marker
 
