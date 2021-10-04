@@ -21,7 +21,8 @@
             <th scope="row">Categories</th>
         </tr>
     </thead>
-    <tbody id="insertProducts"></tbody>
+    <button id="insertProducts" type="submit" >Next Tool</button>
+
 </table>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -44,25 +45,30 @@
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-        $.get("./data/inventory.json").done(function(data)
-        {
-            // console.log(data[0].title)
-            // console.log(data[0].price)
-            // console.log(data[0].quantity)
-            // console.log(data[0].categories)
+        $.get("./data/inventory.json").done(function(data) {
+            // data.forEach(data => {
+                // console.log(data[0].title)
+                // console.log(data[0].price)
+                // console.log(data[0].quantity)
+                // console.log(data[0].categories)
 
-            $("#products").html("<tr><th>" + " Title: "+ "</th>"
-                + "<td>" + data[0].title  + "</td>"
-                + "<th>Quantity:</th>"
-                + "<td>" + data[0].quantity + "</td></tr>"
-                + "<th>Price:</th>"
-                + '<td>' + data[0].price + '</td>'
-                + "<th>Categories:</th>"
-                + '<td>' + data[0].categories + '</td>')
+                $("#products").html("<tr><th>" + " Title: " + "</th>"
+                    + "<td>" + data[0].title + "</td>"
+                    + "<th>Quantity:</th>"
+                    + "<td>" + data[0].quantity + "</td></tr>"
+                    + "<th>Price:</th>"
+                    + '<td>' + data[0].price + '</td>'
+                    + "<th>Categories:</th>"
+                    + '<td>' + data[0].categories + '</td>')
 
-
-        })
-
+                $('button').click(function () {
+                    var button = 0
+                    for (var i = 0; i < data.length; i++) {
+                        return button[i] + 1
+                    }
+                })
+            })
+        // })
 
 
 })();
