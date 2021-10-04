@@ -30,7 +30,7 @@ console.log(mapboxApiToken);
 var map = new mapboxgl.Map({
     container: "map",
     style: 'mapbox://styles/mapbox/satellite-streets-v11',
-    center:[-98.4861, 29.4252],
+    center:[-116.849556 , 37.629562],
     zoom: 10,
 })
 
@@ -38,12 +38,12 @@ var map = new mapboxgl.Map({
 //     .setLngLat([-98.4861, 29.4252])
 //     .addTo(map);
 
-map.addControl(
-    new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl
-    })
-);
+// map.addControl(
+//     new MapboxGeocoder({
+//         accessToken: mapboxgl.accessToken,
+//         mapboxgl: mapboxgl
+//     })
+// );
 
 /**********************************************
  * 					MARKERS
@@ -54,14 +54,33 @@ map.addControl(
 
 
 // TODO TOGETHER: Add a marker to the map using the following coordinates [-98.4861, 29.4260]. This marker will mark the Alamo on our map.
-var marker = new mapboxgl.Marker({color: "black"})
-    .setLngLat([-98.4861, 29.4260])
+var markerTrip = new mapboxgl.Marker({
+    color: "red",
+    draggable: true
+})
+    .setLngLat([-116.849557 , 37.629562])
     .addTo(map);
+
+// var popupTrip = new mapboxgl.Popup({
+//     backgroundColor: 'red'
+// })
+//     .setLngLat([-116.849557 , 37.629562])
+//     .setHTML("<p>Confirmed!</p>")
+//     .addTo(map)
+
 
 // TODO TOGETHER: Change the color of the marker
 
 
 // TODO: Make a new marker! Let's experiment with the color and setting the LngLat [how about a marker for Codeup San Antone? -98.4895, 29.4267 Codeup Dallas? -96.8056, 32.7786]
+
+var popupTrip = new mapboxgl.Popup({
+    backgroundColor: 'red'
+})
+    .setHTML("<p>Confirmed!</p>")
+    .addTo(map)
+    markerTrip.setPopup(popupTrip)
+
 
 // TODO: Update the marker object to make the marker draggable. *Hint: reference the docs!
 
@@ -73,7 +92,10 @@ var marker = new mapboxgl.Marker({color: "black"})
 
 
 // TODO TOGETHER: Add a popup to the map over San Antonio's Codeup. Set the html as a paragraph that says "Codeup Rocks!"
-
+var popup = new mapboxgl.Popup()
+    .setLngLat([-98.489615, 29.426827])
+    .setHTML("<p>Codeup Rocks!</p>")
+    .addTo(map)
 
 // TODO TOGETHER: We'll comment out the popup we just added. Next, let's add a popup to the Alamo marker!
 
