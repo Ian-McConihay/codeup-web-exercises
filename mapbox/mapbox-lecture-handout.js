@@ -77,7 +77,7 @@ var markerTrip = new mapboxgl.Marker({
 var popupTrip = new mapboxgl.Popup({
     backgroundColor: 'red'
 })
-    .setHTML("<p>Confirmed!</p>")
+    .setText("Confirmed!")
     .addTo(map)
     markerTrip.setPopup(popupTrip)
 
@@ -96,14 +96,21 @@ var popup = new mapboxgl.Popup()
     .setLngLat([-98.489615, 29.426827])
     .setHTML("<p>Codeup Rocks!</p>")
     .addTo(map)
+    // .setTracker()
 
 // TODO TOGETHER: We'll comment out the popup we just added. Next, let's add a popup to the Alamo marker!
 
 
 // TODO: Review the popup docs. What are some additional options we can pass to the popup? Choose one and experiment with implementing that option to a popup!
 // TODO: Try setting the text of a popup by using ".setText()" instead of ".setHTML()" - what happens with HTML tags between the two?
+// markerTrip function(timespeed){
+//
+// }
 
 
+popupTrip.on('close', function () {
+    console.log('Closed popup')
+})
 
 /**********************************************
  * 					Geocoder
@@ -118,6 +125,25 @@ var popup = new mapboxgl.Popup()
 //  *      // do something with results
 //  *  })
 
+
+// geocode('Viale per Costa, 6/B, 33081 Aviano PN, Italy', mapboxApiToken).then(function(results){
+//     // map.setCenter(results)
+//     console.log(results)
+//
+//     var markerFood = new mapboxgl.Marker({
+//         color: "red",
+//         draggable: true
+//     })
+//         .setLngLat([12.58616, 46.073495])
+//         .addTo(map)
+//
+//     var popupFood = new mapboxgl.Popup()
+//         .setText("My Favorite food!")
+//         .addTo(map)
+//         markerFood.setPopup(popupFood)
+//
+//         map.flyTo({center: results})
+//     })
 //TODO: Using the geocode method above, add a marker at Codeup to the map
 
 
@@ -134,5 +160,7 @@ var popup = new mapboxgl.Popup()
 // *  })
 
 // TODO: Reverse geocode coordinates of your choice using the reverse geocode method
-
+reverseGeocode({lat: 12.58616, lng: 46.073495}, mapboxApiToken).then(function(results) {
+    console.log(results)
+ })
 
