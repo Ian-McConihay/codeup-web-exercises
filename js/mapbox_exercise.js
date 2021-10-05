@@ -110,7 +110,10 @@ favFood.forEach(function (spot){
     geocode(spot.location, mapboxApiToken).then(function(location){
         var popup = new mapboxgl.Popup()
             .setHTML('<h3><em>' + spot.name + '</em></h3>');
-        var Marker = new mapboxgl.Marker()
+        var Marker = new mapboxgl.Marker({
+            label:
+        })
+
             .setLngLat(location)
             .addTo(map)
             .setPopup(popup);
