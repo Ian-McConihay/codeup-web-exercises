@@ -71,6 +71,30 @@
         // })
 
 
+
+        //shanshan
+        function renderTool(tool){
+        var html = '';
+            html =+ '<tr>';
+            html =+ '<td>' + tool.title + '</td>';
+            html =+ '<td>' + tool.quality + '</td>';
+            html =+ '<td>' + tool. price + '</td>';
+            html =+ '<td>' + tool.categories.join(',') + '</td>'
+            html =+  '</tr>';
+            return html;
+        }
+
+        data.forEach(function(data) {
+            var toolHtml =  renderTool(tool);
+            consol.log(toolHtml);
+            $('#insertProducts').append(toolHtml);
+        })
+
+
+
+
+
+
 })();
 </script>
 
