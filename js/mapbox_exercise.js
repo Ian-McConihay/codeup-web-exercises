@@ -1,11 +1,9 @@
 // Mapbox
-
 mapboxgl.accessToken = mapboxApiToken;
 console.log(mapboxApiToken);
 
 
 // The Map
-
 var map = new mapboxgl.Map({
     container: "map",
     style: 'mapbox://styles/mapbox/satellite-streets-v11',
@@ -13,6 +11,7 @@ var map = new mapboxgl.Map({
     zoom: 10,
 })
 
+//Search Bar
 map.addControl(
     new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
@@ -20,8 +19,10 @@ map.addControl(
     })
 );
 
-//Fav Locations
+//Zoom controls
+map.addControl(new mapboxgl.NavigationControl());
 
+//Fav Locations
 geocode('Viale per Costa, 6/B, 33081 Aviano PN, Italy', mapboxApiToken).then(function(results){
     // map.setCenter(results)
     console.log(results)
@@ -34,7 +35,7 @@ geocode('Viale per Costa, 6/B, 33081 Aviano PN, Italy', mapboxApiToken).then(fun
         .addTo(map)
 
     var popupFood = new mapboxgl.Popup()
-        .setText("My Favorite food!")
+        .setText("New Ristos it!")
         .addTo(map)
     markerFood.setPopup(popupFood)
 
@@ -53,7 +54,7 @@ geocode('10401 Montgomery Blvd NE, Albuquerque, NM 87111', mapboxApiToken).then(
         .addTo(map)
 
     var popupFood = new mapboxgl.Popup()
-        .setText("My Favorite food!")
+        .setText("Dion's Pizza!")
         .addTo(map)
     markerFood.setPopup(popupFood)
 
@@ -72,7 +73,7 @@ geocode('1431 NY-300, Newburgh, NY 12550', mapboxApiToken).then(function(results
         .addTo(map)
 
     var popupFood = new mapboxgl.Popup()
-        .setText("My Favorite food!")
+        .setText("Leo's Pizza!")
         .addTo(map)
     markerFood.setPopup(popupFood)
 
