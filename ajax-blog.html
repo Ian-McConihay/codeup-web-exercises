@@ -29,6 +29,10 @@
         <p class="card-text"></p>
     </div>
 </div>
+
+
+<div id="post"></div>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 
@@ -43,6 +47,32 @@
             + '<h6>' + data[1].catagories + " " + data[1].date + '</h6>'
             + '<p>' + data[1].content + '</p>')
     })
+
+    //shanshan
+    function renderPost(post){
+        var html = "";
+        html += '<div>'
+        html += '<h3>' + post.title + '</h3>';
+        html += '<p>' + post.content + '</p>';
+        html += '<div>' + post.categories.join(',') + '</div>';
+        html +=  '<div>' + post.date + '</div>';
+        html += '</div>'
+        return html;
+    }
+
+    function renderPost(post) {
+        var html ='';
+        for (var i = 0; i < post.length; i++ ){
+            html += renderPost(post[i])
+        }
+        return html;
+    }
+
+    $.get('"./data/blog.json"').done(function (post){
+        $('#post').html(renderPost(post))
+    })
+
+
 
 </script>
 </body>
