@@ -22,12 +22,17 @@ $.get("https://api.openweathermap.org/data/2.5/weather", {
 
 }).done(function(data) {
     console.log(data);
+    console.log(data.dt)
+
+
+
+
+
+
+
 });
 
 
-$.get("https://api.openweathermap.org/data/2.5/weather").done(function(data) {
-    console.log(data.dt[0])
-});
 
 
 
