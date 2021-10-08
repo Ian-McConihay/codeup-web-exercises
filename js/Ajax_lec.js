@@ -121,8 +121,7 @@ $.ajax("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data)
 // //
 $("#rando").click(function(e){
     e.preventDefault();
-    $.get("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data, status)
-{
+    $.get("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data, status) {
     console.log(data.meals[0]) // Stepping into our data. . data > first level ["meals"] at the 0 index > I can see many object properties to get info from
 
     $("#recipeContainer").html("<h1>" + data.meals[0].strMeal + "</h1>"

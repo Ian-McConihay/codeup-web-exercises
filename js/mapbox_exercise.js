@@ -7,8 +7,8 @@ console.log(mapboxApiToken);
 var map = new mapboxgl.Map({
     container: "map",
     style: 'mapbox://styles/mapbox/satellite-streets-v11',
-    center:[-116.849556 , 37.629562],
-    zoom: 3,
+    // center:[-116.849556 , 37.629562],
+    zoom: 1,
 })
 
 //Search Bar
@@ -99,7 +99,7 @@ map.addControl(new mapboxgl.NavigationControl());
 // markerFood.setPopup(popupFood)
 //
 
-
+$('body').css('background-color', 'grey')
 var favFood = [
     {name:'leos', location: '1431 NY-300, Newburgh, NY 12550'},
     {name:'Dions', location: '10401 Montgomery Blvd NE, Albuquerque, NM 87111'},
@@ -111,9 +111,9 @@ favFood.forEach(function (spot){
         var popup = new mapboxgl.Popup()
             .setHTML('<h3><em>' + spot.name + '</em></h3>');
         var Marker = new mapboxgl.Marker({
-            label:
+            color: "green",
+            imgFile: '![](../img/pizza.png)'
         })
-
             .setLngLat(location)
             .addTo(map)
             .setPopup(popup);
