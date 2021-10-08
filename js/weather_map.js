@@ -13,27 +13,39 @@ function convertTime(dtNum){
 }
 
 
+
 $.get("https://api.openweathermap.org/data/2.5/weather", {
     APPID: weatherApiKey,
     q:     "San Antonio, US",
     units: 'imperial',
     exclude:' hourly,alerts,minutely,hourly',
-    dt: "#time"
+    dt: "#time",
+    name: 'San Antonio'
 
 }).done(function(data) {
     console.log(data);
     console.log(data.dt)
 
-function renderWeather() {
-    var card = '';
-    card =+'<tr>';
-    card =+'<td>' + data.name + '</td>';
-    card =+'<td>' + data.dt + '</td>';
-    card =+'<td>' + data.weather.join(',') + '</td>'
-    card =+'</tr>';
-    return card
-}
+// parseInt(temp)
+    $("#weatherReport").html("<h1>" + data.name + "</h1>"
+        + "<span>" + "City  " + data.name + "</span><br>"
+        + "<p>" + "Todays Temp " + parseInt(data.main.temp) + "\u2109" + "</p>"
+        + "<p>" + "Humidity " +  data.main.humidity + "%" + "</p>"
+        + "<p>" + "Wind " + data.wind.speed + "mph" +"</p>"
+        + "<p class="card-text">" + "Clouds " + data.weather[0].description + "</p>")
 
+// function renderWeather(data) {
+    // for (let i = 0; i < data.length; i++) {
+    //
+    //     var card = '';
+    //     card = +'<tr>';
+    //     card = +'<td>' + data.name + '</td>';
+    //     card = +'<td>' + data.dt + '</td>';
+    //     card = +'<td>' + data.weather.join(',') + '</td>'
+    //     card = +'</tr>';
+    //     return card
+    // }
+// }
     // data.forEach(function(data) {
     //     var dataHtml = renderWeather(data);
     //     console.log(dataHtml);
@@ -64,6 +76,8 @@ function renderWeather() {
 //     zoom: 5,
 // })
 // // on: -98.4936, lat: 29.4241}
+
+
 // //Search Bar
 // map.addControl(
 //     new MapboxGeocoder({
