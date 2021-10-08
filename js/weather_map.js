@@ -1,7 +1,7 @@
 // Mapbox
 mapboxgl.accessToken = mapboxApiToken;
 console.log(mapboxApiToken);
-
+$('.card').css('border', '3px solid black')
 
 function convertDateTime(event){
     time.textContent=new Date(event.target.valueAsNumber*1000).toLocaleString();
@@ -24,17 +24,29 @@ $.get("https://api.openweathermap.org/data/2.5/weather", {
     console.log(data);
     console.log(data.dt)
 
+function renderWeather() {
+    var card = '';
+    card =+'<tr>';
+    card =+'<td>' + data.name + '</td>';
+    card =+'<td>' + data.dt + '</td>';
+    card =+'<td>' + data.weather.join(',') + '</td>'
+    card =+'</tr>';
+    return card
+}
 
-
-
-
-
-
+    // data.forEach(function(data) {
+    //     var dataHtml = renderWeather(data);
+    //     console.log(dataHtml);
+    //     $('#weather-report').append(dataHtml);
+    // })
 });
 
 
-
-
+// data.forEach(function(data) {
+//     var dataHtml =  renderWeather(data);
+//     console.log(dataHtml);
+//     $('#insertProducts').append(dataHtml);
+//
 
 
 
