@@ -1,7 +1,7 @@
 // Mapbox
 mapboxgl.accessToken = mapboxApiToken;
 console.log(mapboxApiToken);
-$('.card').css('border', '3px solid black')
+$('#weatherReport').css('border', '3px solid black')
 
 function convertDateTime(event){
     time.textContent=new Date(event.target.valueAsNumber*1000).toLocaleString();
@@ -32,7 +32,7 @@ $.get("https://api.openweathermap.org/data/2.5/weather", {
         + "<p>" + "Todays Temp " + parseInt(data.main.temp) + "\u2109" + "</p>"
         + "<p>" + "Humidity " +  data.main.humidity + "%" + "</p>"
         + "<p>" + "Wind " + data.wind.speed + "mph" +"</p>"
-        + "<p class="card-text">" + "Clouds " + data.weather[0].description + "</p>")
+        + "<p>" + "Clouds " + data.weather[0].description + "</p>")
 
 // function renderWeather(data) {
     // for (let i = 0; i < data.length; i++) {
