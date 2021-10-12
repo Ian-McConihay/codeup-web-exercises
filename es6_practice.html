@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6</title>
+</head>
+<body>
+
+
+<script>
+    const obj = {
+        name: 'Bob',
+        age: 37,
+        skills: {
+            Java: {
+                years: 10
+            },
+            CSS: ['bootstrap', 'react']
+        }
+    };
+
+    //ES6
+    const { name, age, skills: {Java, CSS}  } = obj;
+
+
+
+    //Old way
+    console.log(obj.name, obj.age)
+    //New way
+    console.log(name, age)
+
+
+    //Old way
+    console.log(obj.name, obj.age, obj.skills.Java.years, obj.skills.CSS[1])
+    //New way
+    console.log(name, age, Java, CSS[1])
+
+// const {
+//         name,
+//
+// }
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -15,7 +15,6 @@ function convertTime(dtNum){
 }
 
 
-
 $.get("https://api.openweathermap.org/data/2.5/weather", {
     APPID: weatherApiKey,
     q:     "San Antonio, US",
@@ -59,8 +58,6 @@ $.ajax("https://api.openweathermap.org/data/2.5/onecall",{
 });
 
 
-
-
 // // The Map
 var map = new mapboxgl.Map({
     container: "map",
@@ -78,6 +75,6 @@ map.addControl(
         mapboxgl: mapboxgl
     })
 );
-//
+
 // //Zoom controls
 map.addControl(new mapboxgl.NavigationControl());
