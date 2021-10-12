@@ -36,6 +36,73 @@
     console.log(name, age, Java, CSS[1])
 
 
+    // // old way of accessing elements
+    // var person = {name: 'codeup', age: 4};
+    // var name = person.name;
+    // var age = person.age;
+    // console.log(name); // 'codeup'
+    // console.log(age); // 4
+
+    // new way of accessing elements
+    // const person = {name: 'codeup', age: 4};
+    // const {name, age} = person;
+    // console.log(name); // 'codeup'
+    // console.log(age); // 4
+
+
+    //--------------------------------------\\
+
+    // // Old way
+    // const person = {
+    //     firstName: "Captain",
+    //     lastName: "Nemo",
+    //     address: {
+    //         street: "1234 Ave",
+    //         city: "Antilaw State",
+    //         zip: 1234
+    //     }
+    // }
+    // //To access elements the old way
+    // console.log(person.firstName);
+    // console.log(person.lastName);
+    // console.log(person.address.street);
+    // console.log(person.address.city);
+    // console.log(person.address.zip);
+    //
+    //
+    //
+    // // New way to access elements, storing inside {}
+    // const { firstName, lastName, address: { street, zip, city } } =  person;
+    // console.log(firstName);
+    // console.log(lastName);
+    // console.log(street);
+    // console.log(city);
+    // console.log(zip);
+
+    //Removing the need of person.firstName, person.address.street, person.address.zip and accessing elements without the clutter.
+
+
+    //Working with arrays, same rules apply as above, where we don't need to write out each piece-  var a = arr[0].
+
+    // var arr = [1, 2, 3, 4];
+    // var a = arr[0];
+    // var b = arr[1];
+    // var c = arr[2];
+    // var d = arr[3];
+
+    // let [a, b, c, d] = [1, 2, 3, 4];
+    //
+    // console.log(a); // 1
+    // console.log(b); // 2
+    // console.log(c); // 3
+    // console.log(d); // 4
+
+
+
+
+
+
+
 
 
 
