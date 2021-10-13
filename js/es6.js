@@ -40,7 +40,7 @@ const users = [
 // declared as `const`
 const name = 'your_name_here';
 const email = '';
-const languages = [html', 'css', 'javascript'];
+const languages = ['html', 'css', 'javascript'];
 
 // : rewrite the object literal using object property shorthand
 users.push({
