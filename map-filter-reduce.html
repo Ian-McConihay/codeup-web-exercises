@@ -5,9 +5,10 @@
     <title>Map ~ Filter ~ Reduce</title>
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
-
+<!-- So . map grabs info, filter grabs info but with an argument-->
 //~ * Map * ~
 
 //TODO Together: Let's see a common approach we might have done in the past: our goal is to increase each element of an array by 1 [element + 1], then get an array back with those values
@@ -23,6 +24,11 @@
 
 //TODO Together: Now, let's achieve the same result with the first part of our lesson: the MAP method~
 
+// let numbersAddOneMap = numbers.map(function(number){
+//    return number + 1;
+// });
+
+// console.log(numbersAddOneMap)
 
 //As you can see, .map() accepts a callback function - that callback function is applied to each element in the collection. What about a dive into a deeper, more complicated collection?
 
@@ -49,18 +55,30 @@ const favoriteRestaurants = [
 
 
 //TODO Together: Let's get all these restaurant names out of this array of objects with .map()!
-
+let restaurantNames = favoriteRestaurants.map(function(restaurant){
+    return restaurant.name;
+});
 
 
 //TODO: Create your own array of (up to 3 and at least 2) restaurant objects building off of the basic list you created during the MapBox exercise (or build one anew!) ~5 mins
+$.get("./data/inventory.json").done(function (data, status) {
+    let tools = data.map(function(toolName){
+        return toolName.title
+    })
+})
+
 
 //TODO: Now, having created a personal array of restaurant objects for yourself, use .map() to get your favorite restaurant's names out of that collection, into another array, and out into the console! ~5 mins
 
+
+
 //~ * Filter * ~
+
+
 
 //TODO Together: Once again, let's take a look at the old way we might approach an issue: getting only one type of values out of an array (for example: even numbers only from an array of nums!)
 
-// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //
 // var evens = [];
 //
@@ -73,10 +91,14 @@ const favoriteRestaurants = [
 
 
 //TODO Together: Now, let's refactor the above using the ES6 .filter() method with the same goal: even numbers only!
-
+let even = numbers.filter(function(number){
+    return number % 2 === 0;
+});
 
 //TODO Together: Using my favoriteRestaurants list, let's filter out all of the non-buffet restaurants
-
+let hasBuffet = favoriteRestaurants.filter(function(restaurant){
+    return restaurant.restaurantFeatures.includes("buffet");
+});
 
 //TODO: Each one of your restaurant arrays is unique, but, in that array, identify something to filter by - it could be as simple as "well, let me filter out all of the restaurants with names shorter than 8 characters" or get as complicated as you'd like!
 // TODO: Once you've figured our what you want to filter, go ahead and write the necessary code to achieve what you wanted - remember to practice with .filter() and our ES6 verbiage!
@@ -87,7 +109,7 @@ const favoriteRestaurants = [
 
 //TODO Together: Let's sum up some numbers with the .reduce() method and a number array!
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
 //in the past: we would have built out a loop, probably used a var of sum, and had a look inside of the loop of sum += numbers[i], spit out sum with the sum of our numbers
 
