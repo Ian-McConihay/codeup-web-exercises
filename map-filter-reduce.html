@@ -63,7 +63,7 @@ let restaurantNames = favoriteRestaurants.map(function(restaurant){
 //TODO: Create your own array of (up to 3 and at least 2) restaurant objects building off of the basic list you created during the MapBox exercise (or build one anew!) ~5 mins
 $.get("./data/inventory.json").done(function (data, status) {
     let tools = data.map(function(toolName){
-        return toolName.title
+        return toolName.title // +
     })
 })
 
@@ -78,7 +78,7 @@ $.get("./data/inventory.json").done(function (data, status) {
 
 //TODO Together: Once again, let's take a look at the old way we might approach an issue: getting only one type of values out of an array (for example: even numbers only from an array of nums!)
 
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //
 // var evens = [];
 //
@@ -91,9 +91,9 @@ var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 
 //TODO Together: Now, let's refactor the above using the ES6 .filter() method with the same goal: even numbers only!
-let even = numbers.filter(function(number){
-    return number % 2 === 0;
-});
+// let even = numbers.filter(function(number){
+//     return number % 2 === 0;
+// });
 
 //TODO Together: Using my favoriteRestaurants list, let's filter out all of the non-buffet restaurants
 let hasBuffet = favoriteRestaurants.filter(function(restaurant){
@@ -101,7 +101,16 @@ let hasBuffet = favoriteRestaurants.filter(function(restaurant){
 });
 
 //TODO: Each one of your restaurant arrays is unique, but, in that array, identify something to filter by - it could be as simple as "well, let me filter out all of the restaurants with names shorter than 8 characters" or get as complicated as you'd like!
+
+
 // TODO: Once you've figured our what you want to filter, go ahead and write the necessary code to achieve what you wanted - remember to practice with .filter() and our ES6 verbiage!
+
+// let lessThan15 = favoriteRestaurants.filter(function(restaurant){
+//     return restaurant.name.length < 25
+// });
+
+
+
 
 //~ * Reduce * ~
 
@@ -109,8 +118,14 @@ let hasBuffet = favoriteRestaurants.filter(function(restaurant){
 
 //TODO Together: Let's sum up some numbers with the .reduce() method and a number array!
 
-// let numbers = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];
 
+let sum = numbers.reduce(function(total, number){
+    return total + number;
+})
+let names = favoriteRestaurants.reduce(function(total, number){
+    return total.name  + number.name;
+})
 //in the past: we would have built out a loop, probably used a var of sum, and had a look inside of the loop of sum += numbers[i], spit out sum with the sum of our numbers
 
 //In ES6 with .reduce(). .reduce() has a couple of components to it: .reduce(callbackFunction, initialValue)
@@ -120,11 +135,34 @@ let hasBuffet = favoriteRestaurants.filter(function(restaurant){
 //TODO Together: Let's take a step a bit deeper with .reduce() - .reduce()'s output can take many forms and shapes. For example, let's say we wanted to have a little Javascript that would count the length of the strings in an array and return that info back to us in an object. For example: ["Codeup", "San", Antonio", "Dallas", "Quasar", Cohort", "ES6"] would get us: Object { Codeup: 6, San: 3, Antonio: 7, Dallas: 6, Quasar: 6, Cohort: 6, ES6: 3 }
 
 let stringArr = ["Codeup", "San", "Antonio", "Dallas", "Quasar", "Cohort", "ES6"];
-
+let stringLengthObj = stringArr.reduce(function(objectProp, element){
+   objectProp[element] = element.length;
+    return objectProp
+}, {});
 
 //TODO: Let's make a new array of objects to use - make an array of objects [{},{},{}] consisting of a number of family members as objects with their name and ages as properties. Use .reduce() to sum up the age of those family members and see what it is! e.g. [{name: "Thurston Howell III", age: 50}, {name: "William Dean Howells", age: 83}] would be 133 by adding those two age properties together (50 + 83).
+const howels = [
+    {
+        name: "Thurston Howell III",
+        age: 50
+    },
+    {
+        name: "William Dean Howells",
+        age: 83
+    }
 
+];
+
+let howelsAge = howels.reduce(function(objAge, elementAge){
+    return objAge.age + elementAge.age
+});
+
+
+let howelsAge1 = howels.reduce(function(objAge, elementAge){
+    return objAge + elementAge.age
+}, 0 );
 
 </script>
+
 </body>
 </html>
