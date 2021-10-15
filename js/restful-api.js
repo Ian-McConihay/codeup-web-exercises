@@ -2,7 +2,7 @@
 
 
 function getPokemon(){
-    return fetch(pokemonAPI).
+    return fetch(pokemonAPI).then((callJson)=>callJson.json());
 }
 
 
