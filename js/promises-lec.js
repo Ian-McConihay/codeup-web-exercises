@@ -4,8 +4,8 @@
 /*********************************************
  *        USING FETCH WITH PROMISES
  ******************************************** */
-let starWarsApi = fetch('https://swapi.dev/api/films')
-var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
+// let starWarsApi = fetch('https://swapi.dev/api/films')
+// var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
 // return of fetch request is a Promise object
 
 //TODO: console log the results of the above Promise. What is the result?
