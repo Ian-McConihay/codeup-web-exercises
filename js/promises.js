@@ -1,3 +1,4 @@
+//linked to the promises lec html
 fetch('https://api.github.com/users/jackiedallas/events/public', {headers: {'Authorization': gitHubApi}})
     .then((callForJson)=>{
         return callForJson.json();

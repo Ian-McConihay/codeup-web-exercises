@@ -74,7 +74,7 @@ var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
 //         console.log(StarWarsData)
 //         StarWarsData.results.forEach((film)=>{console.log(film.title)})
 // })
-
+//
 // fetch('https://swapi.dev/api/films').then(function(callForJson){
 //         return callForJson.json();
 //     }).then(function(StarWarsData){
