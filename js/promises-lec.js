@@ -55,10 +55,6 @@ console.log(pokemonAPI)
 //     .then((jsonData)=>jsonData.results)
 //     .then((results)=>results.forEach((result)=>console.log(result.name)));
 
-fetch("https://share.osf.io/api/v2/normalizeddata/")
-    .then((response)=>response.json())
-    .then((jsonData)=>jsonData.results)
-    .then((results)=>results.forEach((result)=>console.log(result)));
 
 
 
