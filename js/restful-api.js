@@ -1,15 +1,24 @@
 
+
+
+
+
 const pokemonAPI = "https://pokeapi.co/api/v2/pokemon"
 //Get all
 function getPokemons(){
     return fetch(pokemonAPI).then((callJson)=>callJson.json());
 }
 
+
+
+
 //Get a by ID
 function getPokemon(){
     return fetch('${pokemonAPI}/${results}')
         .then((callJson)=>callJson.json());
 }
+
+
 //function(11)
 
 // function editDog(dog) {
