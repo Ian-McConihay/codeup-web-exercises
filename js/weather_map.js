@@ -38,24 +38,24 @@ $.get("https://api.openweathermap.org/data/2.5/weather", {
 });
 
 
-$.ajax("https://api.openweathermap.org/data/2.5/onecall",{
-    data: {
-        APPID: weatherApiKey,
-        lat: 29.4241,
-        lon: -98.4936,
-        units: 'imperial',
-        exclude: ' hourly,alerts,minutely'
-    }
-    }).done(function(data) {
-    console.log(data);
-    for(var i = 1; i <= 5; i++ ) {
-        $("#fiveDay").append("<div class='card'><h2 class='card-title'>" + "5 Day Forecast!" + "</h2>"
-            + "<div class='card-body'><p>" + "Todays Temp " + parseInt(data.daily[i].temp.day) + "\u2109" + "</p>"
-            + "<p>" + "Humidity " + data.daily[i].humidity + "%" + "</p>"
-            + "<p>" + "Wind " + parseInt(data.daily[i].wind_speed) + "mph" + "</p>"
-            + "<p>" + "Clouds " + data.daily[i].weather[0].description + "</p></div>")
-    }
-});
+    $.ajax("https://api.openweathermap.org/data/2.5/onecall", {
+        data: {
+            APPID: weatherApiKey,
+            lat: 29.4241,
+            lon: -98.4936,
+            units: 'imperial',
+            exclude: ' hourly,alerts,minutely'
+        }
+    }).done(function (data) {
+        console.log(data);
+        for (var i = 1; i <= 5; i++) {
+            $("#fiveDay").append("<div class='card'><h2 class='card-title'>" + "5 Day Forecast!" + "</h2>"
+                + "<div class='card-body'><p>" + "Todays Temp " + parseInt(data.daily[i].temp.day) + "\u2109" + "</p>"
+                + "<p>" + "Humidity " + data.daily[i].humidity + "%" + "</p>"
+                + "<p>" + "Wind " + parseInt(data.daily[i].wind_speed) + "mph" + "</p>"
+                + "<p>" + "Clouds " + data.daily[i].weather[0].description + "</p></div>")
+        }
+    });
 
 
 // // The Map
@@ -72,6 +72,7 @@ var map = new mapboxgl.Map({
 map.addControl(
     new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
+        // localGeocoder: ,
         mapboxgl: mapboxgl
     })
 );
